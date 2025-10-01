@@ -19,7 +19,7 @@ async def check_latency(request: Request):
     threshold = body.get("threshold_ms", 180)
 
     # Read telemetry bundle in the repo
-    with open("telemetry.json") as f:
+    with open("q-vercel-latency.json") as f:
         telemetry = json.load(f)
 
     results = {}
